@@ -11,8 +11,11 @@ sudo systemctl enable httpd
 
 echo "Instalando o módulo do PHP no Apache Web Server"
 sudo dnf install php php-common -y
+sudo dnf install php-gd php-zip php-mcrypt php-json php-xml php-gettext php-curl php-intl 
 
-
-echo "Instalando a página inicial"
+echo "Instalando a Página Inicial"
 sudo dnf install wget -y
-wget https://raw.githubusercontent.com/msmagnanijr/infnet-linux-first-steps/main/scripts/index.html -O /var/www/html/index.html
+wget https://raw.githubusercontent.com/msmagnanijr/infnet-linux-first-steps/main/scripts/index.php -O /var/www/html/index.php
+
+echo "Reiniciando o Apache Web Server"
+sudo systemctl restart httpd
