@@ -1,0 +1,1 @@
+{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"/home/mmagnani/Workspace/infnet/linux-basico/infnet-linux-first-steps","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nosso primeiro exemplo usando PHP no Linux com Apache Web Server</title>
+</head>
+<body>
+<?php
+$cidades = array('Porto Alegre', 'Curitiba', 'Niterói', 'São Paulo', 'Fortaleza');
+$total = count($cidades);
+?>
+<h1>Lista de Cidades</h1>
+<ul>
+<?php
+$i = 0;
+?>
+<?php while ($i < $total) { ?>
+<li><?php echo $cidades[$i] ?></li>
+<?php  ++$i ?>
+<?php }  ?>
+</ul>
+</body>
+</html>
