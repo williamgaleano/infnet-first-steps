@@ -1,21 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Nosso primeiro exemplo usando PHP no Linux com Apache Web Server</title>
+<title>How to put PHP in HTML - foreach Example</title>
 </head>
 <body>
 <?php
-$cidades = array('Porto Alegre', 'Curitiba', 'Niterói', 'São Paulo', 'Fortaleza');
-$total = count($cidades);
+$employees = array(‘John’, ‘Michelle’, ‘Mari’, ‘Luke’, ‘Nellie’);
 ?>
-<h1>Lista de Cidades</h1>
+<h1>List of Employees</h1>
 <ul>
-<?php
-$i = 0;
-?>
-<?php while ($i < $total) { ?>
-<li><?php echo $cidades[$i] ?></li>
-<?php  ++$i ?>
+<?php foreach ($employees as $employee) { ?>
+<li><?php echo $employee ?></li>
 <?php }  ?>
 </ul>
 </body>
