@@ -15,7 +15,7 @@ sudo dnf install php-gd php-zip php-mcrypt php-json php-xml php-gettext php-curl
 
 echo "Instalando a Página Inicial"
 sudo dnf install wget -y
-wget https://raw.githubusercontent.com/msmagnanijr/infnet-linux-first-steps/main/scripts/index.php -O /var/www/html/index.php
+wget https://raw.githubusercontent.com/msmagnanijr/infnet-first-steps/main/iac/scripts/index.php -O /var/www/html/index.php
 
 echo "Reiniciando o Apache Web Server"
 sudo systemctl restart httpd
