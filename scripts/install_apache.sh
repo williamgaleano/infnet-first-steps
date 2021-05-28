@@ -14,3 +14,4 @@ sudo dnf install php php-common -y
 
 
 echo "Instalando a página inicial"
+wget https://raw.githubusercontent.com/msmagnanijr/infnet-linux-first-steps/main/scripts/index.html -O /var/www/html/index.html
