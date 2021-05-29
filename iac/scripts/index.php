@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Lista de times de Futebol do Brasil</title>
+<title>How to put PHP in HTML- Date Example</title>
 </head>
 <body>
+<div>This is pure HTML message.</div>
+<div>Next, we’ll display today’s date and day by PHP!</div>
+<div>
 <?php
-$times = array("Botafogo", "Corinthians", "Flamengo", "Palmeiras", "Santos");
+echo 'Today’s date is <b>' . date('Y/m/d') . '</b> and it’s a <b>'.date('l').'</b> today!';
 ?>
-<h1>Lista de Times</h1>
-<ul>
-<?php foreach ($times as $time) { ?>
-<li><?php echo $time ?></li>
-<?php }  ?>
-</ul>
+</div>
+<div>Again, this is static HTML content.</div>
 </body>
 </html>
